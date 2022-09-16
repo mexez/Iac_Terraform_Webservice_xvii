@@ -19,6 +19,13 @@ resource "aws_vpc" "main" {
   enable_classiclink             = var.enable_classiclink
   enable_classiclink_dns_support = var.enable_classiclink_dns_support
 
+   tags = merge(
+    var.tags,
+    {
+      Name = format("%s-VPC", var.name)
+    },
+  )
+
 }
 
 # Get list of availability zones

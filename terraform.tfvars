@@ -16,6 +16,16 @@ preferred_number_of_private_subnets = 4
 
 environment = "dev"
 
+ami = "ami-02f3416038bdb17fb"
+
+keypair = "eoan"
+
+master-username = "mexy"
+
+master-password = "12345qwert.."
+
+account_no = "159658572833"
+
 tags = {
   Owner-Email = "eezeali@gmail.com"
   Managed-By = "Terraform"
