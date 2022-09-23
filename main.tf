@@ -3,13 +3,13 @@ provider "aws" {
   region = var.region
 }
 
-terraform {
-  backend "s3" {
-    bucket = "tstatefiletest"
-    key    = "myapp/test/terraform.tfstate"
-    region = "us-east-2"
-  }
-}
+#terraform {
+#  backend "s3" {
+#    bucket = "tstatefiletest"
+#    key    = "myapp/test/terraform.tfstate"
+#    region = "us-east-2"
+#  }
+#}
 
 # Create VPC
 resource "aws_vpc" "main" {
